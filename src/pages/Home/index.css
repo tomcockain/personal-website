@@ -1,0 +1,33 @@
+
+@font-face {
+  font-family: 'FivoSans';
+  src: url("../../Fonts/FivoSans-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url("../../Fonts/Gotham-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FivoSans';
+  src: url("../../Fonts/FivoSans-Bold-Oblique.otf") format("opentype");
+  font-weight: bolder;
+  font-style: bolder;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url("../../Fonts/Gotham-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: bold;
+}
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing:border-box; 
+}
+.curveSVG{
+  align-self: flex-end;
+}
