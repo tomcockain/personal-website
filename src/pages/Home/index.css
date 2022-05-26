@@ -1,21 +1,21 @@
 
 @font-face {
   font-family: 'FivoSans';
-  src: url("../../Fonts/FivoSans-Regular.otf") format("opentype");
+  src: url("../../Fonts/FivoSans-Medium.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Gotham';
-  src: url("../../Fonts/Gotham-Bold.otf") format("opentype");
+  src: url("../../Fonts/Gotham Medium.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'FivoSans';
+  font-family: 'FivoSansBold';
   src: url("../../Fonts/FivoSans-Bold-Oblique.otf") format("opentype");
-  font-weight: bolder;
-  font-style: bolder;
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: 'Gotham';

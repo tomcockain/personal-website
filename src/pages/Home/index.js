@@ -3,6 +3,8 @@ import HeroSection from '../../components/HeroSection';
 import Navbar from '../../components/Navbar'
 import Sidebar from '../../components/Sidebar'
 import Degrees from '../../components/Degrees'
+import Experience from '../../components/Experience'
+import Projects from '../../components/Projects'
 import './index.css';
 
 function Home() {
@@ -20,6 +22,8 @@ function Home() {
         <Navbar isOpen={isOpen} toggle={toggle}/>
         <HeroSection/>
         <Degrees></Degrees>
+        <Experience></Experience>
+        <Projects></Projects>
     </>
   )
 }

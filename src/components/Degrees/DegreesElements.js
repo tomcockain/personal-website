@@ -1,9 +1,9 @@
 import styled, {keyframes} from 'styled-components'
-import backgroundImage from '../../images/background1.png';
+import backgroundImage from '../../images/background.png';
 
 const BackgroundSwipe = keyframes`
   0% { transform: translateX( 0%)}
-  100% { transform: translateX(100%)}
+  100% { transform: translateX(99%)}
 `
 
 export const BlackCover = styled.div`
@@ -11,11 +11,18 @@ export const BlackCover = styled.div`
   height: 92vh;
   background: black;
   width: 100%;
-  z-index: 50;
-  transform: translateX(100%);
-  animation: ${(props) => props.inView? BackgroundSwipe : {}  } 1.5s ease-in;
-`
+  transform: translateX(0%);
+  animation: ${(props) => props.inView? BackgroundSwipe : {} } 0.7s ease-in;
+  animation-fill-mode: forwards;
 
+`
+export const BlackCoverOuter = styled.div`
+  overflow: hidden;
+  position: absolute;
+  z-index: 45;
+  height: 92vh;
+  width: 100%;
+`
 export const DegreesContainer = styled.div`
   display: grid;
   grid-template-columns: 0.6fr;
@@ -27,7 +34,7 @@ export const DegreesContainer = styled.div`
   background-size: 100%;
   background-repeat: no-repeat;
   justify-content: center;
-  z-index: 50;
+  z-index: 55;
 `
 const fadeInY = keyframes`
   0% { opacity: 0; transform: translateY(-50px)}
@@ -41,7 +48,7 @@ const fadeOutY = keyframes`
 export const Title = styled.h2`
   animation: ${(props) => props.isVisible ? fadeInY : fadeOutY  } 0.7s ease-in-out;
   opacity: 0;
-  animation-delay: 0.7gis;
+  animation-delay: 0.4s;
   animation-fill-mode: forwards;
   grid-row-start: 2;
   font-family: 'Gotham';
@@ -75,7 +82,7 @@ export const ListContainer = styled.div`
   width: 100%;
   gap: 10%;
   background: "#cdf564";
-  animation-delay: 1s;
+  animation-delay: 0.5s;
   animation-fill-mode: forwards;
   opacity: 0;
 

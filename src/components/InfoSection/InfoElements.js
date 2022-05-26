@@ -14,5 +14,4 @@ font-weight: 100;
 export const InfoBox = styled.div`
   font-family: 'FivoSans';
   font-size: 10rem;
-
 `
