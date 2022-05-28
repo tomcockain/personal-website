@@ -1,12 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.19f31a54.css",
-    "main.js": "/static/js/main.c0ca741f.js",
+    "main.js": "/static/js/main.ded88068.js",
     "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
     "static/media/spotify-game.gif": "/static/media/spotify-game.e8b1ce411a60ea0712bc.gif",
     "static/media/poster.gif": "/static/media/poster.b3b31ab9add4d2954ee7.gif",
     "static/media/me.jpg": "/static/media/me.3e0572ba4b3746c5f304.jpg",
-    "static/media/brian eno.png": "/static/media/brian eno.cd9f9ffcbca4051ad9f9.png",
     "static/media/background.png": "/static/media/background.a9f4965912c089259a18.png",
     "static/media/calculator.gif": "/static/media/calculator.abdf1d6b115a672fbb3a.gif",
     "static/media/peggy.jfif": "/static/media/peggy.11ec0fac52a44a1f17b5.jfif",
@@ -14,6 +13,7 @@
     "static/media/burial.jpg": "/static/media/burial.0d4879e042123010c182.jpg",
     "static/media/avalanches.jfif": "/static/media/avalanches.6cb1ebb135dfef27066d.jfif",
     "static/media/booklist.gif": "/static/media/booklist.efed3b02715fb4bc84c0.gif",
+    "static/media/twigs.jfif": "/static/media/twigs.ac5488f4f7e556e26028.jfif",
     "static/media/FivoSans-Bold-Oblique.otf": "/static/media/FivoSans-Bold-Oblique.44f48090aa3fdc9d9248.otf",
     "static/media/bristol-logo.jpeg": "/static/media/bristol-logo.22564bf3966882b70ef1.jpeg",
     "static/media/FivoSans-Medium.otf": "/static/media/FivoSans-Medium.fde40a5176f1fe2775fe.otf",
@@ -22,11 +22,11 @@
     "static/media/down-arrow.svg": "/static/media/down-arrow.5ec58ff6222f74b5a80a6fe9825722b7.svg",
     "index.html": "/index.html",
     "main.19f31a54.css.map": "/static/css/main.19f31a54.css.map",
-    "main.c0ca741f.js.map": "/static/js/main.c0ca741f.js.map",
+    "main.ded88068.js.map": "/static/js/main.ded88068.js.map",
     "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.19f31a54.css",
-    "static/js/main.c0ca741f.js"
+    "static/js/main.ded88068.js"
   ]
 }
