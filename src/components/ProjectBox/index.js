@@ -15,7 +15,7 @@ const ProjectBox = (props) => {
   } 
   return (
     <>
-    
+    <a href={props.project.link}>
     <Container onClick={resize} large={large} size={height}>
       <Card size={height} >
         <ImageContainer artist={artist}>
@@ -26,6 +26,7 @@ const ProjectBox = (props) => {
       </Card>
       <Background size={height} colour={colour} opacity={opacity}></Background>       
     </Container>
+    </a>
     </>
   )
 }

@@ -5,7 +5,7 @@ import ProjectBox from '../ProjectBox'
 import Curve from '../Curve'
 // import profilePicture from '../../images/profile.svg';
 import profilePicture from '../../images/me.jpg';
-import brianEno from '../../images/brian eno.png';
+import twigs from '../../images/twigs.jfif';
 import burial from '../../images/burial.jpg';
 import avalanches from '../../images/avalanches.jfif';
 import jpegmafia from '../../images/peggy.jfif';
@@ -37,27 +37,31 @@ const HeroSection = () => {
       title: 'Burial',
       image: burial,
       subTitle: 'Artist',
+      link: 'https://open.spotify.com/artist/0uCCBpmg6MrPb1KY2msceF'
     },
     {
-      title: 'Brian Eno',
-      image: brianEno,
+      title: 'FKA Twigs',
+      image: twigs,
       subTitle: 'Artist',
+      link: 'https://open.spotify.com/artist/6nB0iY1cjSY1KyhYyuIIKH'
     },
     {
       title: 'Tom Cockain',
       image: profilePicture,
       subTitle: 'Web Developer',
-      technologies: ['Mongo', 'Express', 'Angular', 'Node'] 
+      link: 'https://www.linkedin.com/in/tom-cockain-b3771618b/'
     },
     {
       title: 'The Avalanches',
       image: avalanches,
       subTitle: 'Artist',
+      link: 'https://open.spotify.com/artist/3C8RpaI3Go0yFF9whvKoED'
     },
     {
       title: 'JPEGMAFIA',
       image: jpegmafia,
       subTitle: 'Artist',
+      link: 'https://open.spotify.com/artist/6yJ6QQ3Y5l0s0tn7b0arrO'
     }
   ]
 

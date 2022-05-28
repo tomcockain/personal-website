@@ -23,7 +23,6 @@ const Experience = () => {
     <ImageJS2 src={JSImage}></ImageJS2>
     <ExperienceConatiner>
       <Title  ref={listRef1} inView={inView1}>My Top Languages of 2022</Title>
-      
       <GraphFlexBox>
         <Bar ref={barRef1} value={barChartData[0]} colour={barChartColour[0]} inView={inView2}>
           <Text inView={inView2}><b>#1</b> JavaScript ES6</Text>
