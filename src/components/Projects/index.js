@@ -47,7 +47,7 @@ const Projects = () => {
   const [listRef1, inView1] = useInView();
   return (
 
-      <ProjectsContainer>
+      <ProjectsContainer id="projects">
         <Title ref={listRef1} inView={inView1}>Projects</Title>
         <FlexBox>
           {projects.map((project) => (

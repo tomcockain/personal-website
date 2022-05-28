@@ -17,13 +17,14 @@ function Home() {
     setIsOpen(!isOpen);
   }
   return (
-    <>
+    <>  
+
         <Sidebar isOpen={isOpen} toggle={toggle}/>
         <Navbar isOpen={isOpen} toggle={toggle}/>
         <HeroSection/>
-        <Degrees></Degrees>
-        <Experience></Experience>
-        <Projects></Projects>
+        <Degrees ></Degrees>
+        <Experience ></Experience>
+        <Projects ></Projects>
     </>
   )
 }

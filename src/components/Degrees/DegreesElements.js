@@ -12,7 +12,7 @@ export const BlackCover = styled.div`
   background: black;
   width: 100%;
   transform: translateX(0%);
-  animation: ${(props) => props.inView? BackgroundSwipe : {} } 0.7s ease-in;
+  animation: ${(props) => props.inView? BackgroundSwipe : {} } 1s ease-in;
   animation-fill-mode: forwards;
 
 `

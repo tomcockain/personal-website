@@ -18,7 +18,7 @@ const Experience = () => {
   const barChartColour = ['#cdf564', '#00e1cc', 'black', 'white']
 
   return (
-    <Background>
+    <Background id="languages">
     <ImageJS src={JSImage}></ImageJS>
     <ImageJS2 src={JSImage}></ImageJS2>
     <ExperienceConatiner>

@@ -72,7 +72,7 @@ const HeroSection = () => {
           ))}
       </FlexBox>
       <HeroText>... and I'm a massive Spotify fan</HeroText>
-      <HeroSubText>This is my CV <span>wrapped</span><br/><ArrowImage src={downArrow}></ArrowImage></HeroSubText>
+      <HeroSubText to='education' spy={true} smooth={true} exact={true} offset={-80} duration={500}>This is my CV <i>Wrapped</i><br/><ArrowImage src={downArrow} ></ArrowImage></HeroSubText>
       <Curve style={{zIndex: 1}}  offsetY={offsetY}/>
     </HeroContainer>
   )

@@ -27,7 +27,7 @@ const Degrees = () => {
 
 
   return (
-    <>
+    <div id='education'>
     <BlackCoverOuter>
       <BlackCover ref={backgroundRef} inView = {inView3}></BlackCover>
     </BlackCoverOuter>
@@ -49,7 +49,7 @@ const Degrees = () => {
     </List>
     </DegreesContainer>
     
-    </>
+    </div>
   )
 }
 

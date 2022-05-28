@@ -4,16 +4,17 @@ import { Link as LinkScroll } from 'react-scroll'
 
 export const Nav = styled.nav`
     font-family: 'FivoSans';
-    background: black;
+    background: ${({scrollNav}) => (scrollNav ? 'black' : 'transparent')};
     height: 80px;
     display: flex;
+    margin-top: -80px;
     justify-content: center;
     align-items: center;
     font-size: 1rem;
     position: sticky;
     top: 0;
     z-index: 100;
-
+    transition: 0.8s all ease;
     @media screen and (max-width: 960px){
         transition: 0.8s all ease;
     }
@@ -31,12 +32,16 @@ export const NavLogo = styled(LinkRouter)`
     color: #fff;
     justify-self: flex-start;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     display: flex;
     align-items: center;
     margin-left: 24px;
-    font-weight: bold;
+
     text-decoration: none;
+    &:hover {
+        transition: all 0.3s ease-in-out;
+        color: #01bf71;
+    }
 `;
 export const MobileIcon = styled.div`
     display: none;
@@ -56,13 +61,15 @@ export const MobileIcon = styled.div`
 export const NavMenu = styled.ul`
     display: flex;
     align-items: center;
+    font-size: 1.5rem;
     list-style: none;
     text-align: center;
-    transform: translate(-7%);
 
     @media screen and (max-width: 768px) {
         display: none;
     }
+    
+
 `
 export const NavItem = styled.li`
     height: 80px;
@@ -75,9 +82,12 @@ export const NavLinks = styled(LinkScroll)`
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
-
+    &:hover {
+        transition: all 0.3s ease-in-out;
+        color: #01bf71;
+    }
     &.active {
-        border-bottom: 3px solid #01bf71;
+        border-bottom: 3px solid #010606;
     }
 `
 export const NavBtn = styled.nav`
@@ -89,6 +99,7 @@ export const NavBtn = styled.nav`
     } 
 `
 export const NavBtnLink = styled(LinkRouter)`
+
     border-radius: 50px;
     background: #01bf71;
     white-space: nowrap;
@@ -100,9 +111,9 @@ export const NavBtnLink = styled(LinkRouter)`
     cursor: pointer;
     transition: all 0.2 ease-in-out;
     text-decoration: none;
-        
+    
     &:hover {
-        transition: all 0.2 ease-in-out;
+        transition: all 0.2s ease-in-out;
         background: #fff;
         color: #010606;
     }

@@ -1,20 +1,20 @@
 import styled, {keyframes} from 'styled-components'
+import { Link as LinkScroll } from 'react-scroll'
 
 export const HeroContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 2fr repeat(3, 1fr);
-  height: 92vh;
+  grid-template-rows: 2fr repeat(2, 1fr) 0.5fr;
+  height: 100vh;
   width: 100%;
   background: linear-gradient(to right, red , yellow);
   z-index: 10;
   justify-content: center;
   align-items: center;
-
 `
 
 export const HeroTitle = styled.h1`
-  margin-top: 10px;
+  margin-top: 5%;
   text-align: center;
   font-family: 'Gotham';
   letter-spacing: -0.05em;
@@ -32,20 +32,16 @@ export const HeroImageContainer = styled.div`
   align-items: center;
 `
 export const HeroText = styled.div`
+  margin-top: 10px;
   text-align: center;
   font-family: 'Gotham';
   letter-spacing: -0.05em;
   font-size: 2rem;
   color: #223c5f;
 `
-const animation = keyframes`
-  0% { opacity: 0;}
-  100% { opacity: 0.9;}
-`
-
-export const HeroSubText = styled.h2`
-  animation-name: ${animation};
-  animation-duration: 5s;
+export const HeroSubText = styled(LinkScroll)`
+  margin:auto;
+  width: 35%;
   font-family: 'Gotham';
   letter-spacing: -0.05em;
   font-size: 3rem;
@@ -53,13 +49,19 @@ export const HeroSubText = styled.h2`
   text-align: center;
   align-self: start;
   z-index: 2;
-
-  .span{
-    color: white;
-  }
+  cursor: pointer;
+  font-weight: bold;
+  &:hover {
+        
+        color: #c6daf5;
+        transition: 0.3s ease-in-out;
+        opacity: 0.9;
+    }
 `
 export const ArrowImage = styled.img`
-  height: 50px;
+  transform: translateY(10px);
+  height: 70px;
+  
 `
 export const FlexBox = styled.div`
   width: 100%;
