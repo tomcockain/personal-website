@@ -1,6 +1,12 @@
 html{
   scroll-behavior: smooth;
-}
+
+  }
+
+
+
+  @media(min-height:500px){
+ }
 
 @font-face {
   font-family: 'FivoSans';

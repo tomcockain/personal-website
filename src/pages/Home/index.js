@@ -12,6 +12,9 @@ function Home() {
 
   const [isOpen, setIsOpen] = useState(false);
   
+  useEffect(() => {
+    document.title = "new title"
+ }, []);
 
   const toggle = ()=>{
     setIsOpen(!isOpen);

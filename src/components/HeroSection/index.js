@@ -6,7 +6,7 @@ import Curve from '../Curve'
 // import profilePicture from '../../images/profile.svg';
 import profilePicture from '../../images/me.jpg';
 import twigs from '../../images/twigs.jfif';
-import burial from '../../images/burial.jpg';
+import burial from '../../images/burial.jfif';
 import avalanches from '../../images/avalanches.jfif';
 import jpegmafia from '../../images/peggy.jfif';
 import downArrow from '../../images/down-arrow.svg';
@@ -22,6 +22,8 @@ const HeroSection = () => {
     height:'400px',
     width: '296.29px'
   };
+
+  
 
   const handleScroll = () => {
     setOffsetY(window.pageYOffset)

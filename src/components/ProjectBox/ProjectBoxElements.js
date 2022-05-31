@@ -1,5 +1,12 @@
 import styled, {keyframes} from 'styled-components'
 
+export const Link = styled.a`
+  /* @media(min-height:500px){
+    transform: scale(0.5)
+  } */
+  height: 50%;
+`
+
 export const Card = styled.div`
   position: absolute;
   width: ${(props) => props.size.width};
@@ -38,6 +45,7 @@ export const Container = styled.div`
         transform: scale(1.05);
         transition: 0.1s ease-in-out;
     }
+
 `
 export const ImageContainer = styled.div`
   height: 60%;
@@ -52,7 +60,8 @@ export const ImageContainer = styled.div`
 `
 export const ProjectImage = styled.img`
   position: absolute;
-  width: 120%;
+  width: 110%;
+
   z-index: 5;
   margin-top: 0%;
 `

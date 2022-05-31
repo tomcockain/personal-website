@@ -1,8 +1,10 @@
 import React, {useState, useEffect} from 'react'
 import {FaBars} from 'react-icons/fa'
+import { AiFillGithub, AiFillFilePdf, AiFillLinkedin } from "react-icons/ai"
 import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu,
-NavItem, NavLinks, NavBtn, NavBtnLink } from './NavbarElements'
-import {animateScroll as scroll} from 'react-scroll';
+NavItem, NavLinks, NavBtn, LinkContainer, Icon } from './NavbarElements'
+import {animateScroll as scroll} from 'react-scroll'
+import CV from './TomCockainCV.pdf'
 
 const Navbar = ({toggle}) => {
 
@@ -47,7 +49,18 @@ const Navbar = ({toggle}) => {
                     </NavItem>
                 </NavMenu>
                 <NavBtn>
-                    <NavBtnLink to= 'contact' spy={true} smooth={true} exact={true} offset={-80} duration={500}>Contact Me</NavBtnLink>
+                    <LinkContainer>
+                        <Icon href='https://github.com/tomcockain' target="_blank">
+                            <AiFillGithub/>
+                        </Icon>
+                        
+                        <Icon href='https://www.linkedin.com/in/tom-cockain-b3771618b/' target="_blank">                           
+                            <AiFillLinkedin/>
+                        </Icon>
+                        <Icon href={CV} target="_blank" rel="noreferrer">
+                            <AiFillFilePdf/>
+                        </Icon>
+                    </LinkContainer>
                 </NavBtn>
             </NavbarContainer>
         </Nav>

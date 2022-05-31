@@ -64,7 +64,7 @@ export const Text = styled.div`
   font-size: 2rem;
   color: white;
   letter-spacing: -0.03em;
-  transform: translateX(20px) translateY(40%);
+  transform: translateX(10%) translateY(40%);
   color: red;
   animation: ${(props) => props.inView ? textAnimation : {}  } 0.7s ease-in-out;
   animation-fill-mode: forwards;

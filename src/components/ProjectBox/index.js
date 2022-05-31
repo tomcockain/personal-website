@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Container, ProjectImage, ProjectTitle, ShortAbout, Card, Background, ImageContainer} from './ProjectBoxElements'
+import { Link, Container, ProjectImage, ProjectTitle, ShortAbout, Card, Background, ImageContainer} from './ProjectBoxElements'
 
 const ProjectBox = (props) => {
   const artist = props.artist;
@@ -15,7 +15,7 @@ const ProjectBox = (props) => {
   } 
   return (
     <>
-    <a href={props.project.link}>
+    <Link href={props.project.link} target="_blank">
     <Container onClick={resize} large={large} size={height}>
       <Card size={height} >
         <ImageContainer artist={artist}>
@@ -26,7 +26,7 @@ const ProjectBox = (props) => {
       </Card>
       <Background size={height} colour={colour} opacity={opacity}></Background>       
     </Container>
-    </a>
+    </Link>
     </>
   )
 }

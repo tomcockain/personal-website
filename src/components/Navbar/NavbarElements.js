@@ -118,3 +118,17 @@ export const NavBtnLink = styled(LinkRouter)`
         color: #010606;
     }
 `
+export const LinkContainer = styled.div`
+    display: flex;
+    gap: 5%;
+`
+export const Icon = styled.a`
+    font-size: 3rem;
+    cursor: pointer;
+    color: white;
+    &:hover {
+        transition: all 0.3s ease-in-out;
+        color: #01bf71;
+    }
+`
+

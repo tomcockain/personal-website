@@ -11,6 +11,9 @@ export const HeroContainer = styled.div`
   z-index: 10;
   justify-content: center;
   align-items: center;
+  @media(min-height:500px){
+    grid-template-rows: 2fr repeat(2, 1fr) 0.5fr;
+  }
 `
 
 export const HeroTitle = styled.h1`
@@ -20,6 +23,10 @@ export const HeroTitle = styled.h1`
   letter-spacing: -0.05em;
   font-size: 4rem;
   color: #223c5f;
+
+  @media(max-height:1000px){
+    font-size: 3rem;
+ }
 `
 export const HeroImage = styled.img`
   height: 300px;

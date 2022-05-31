@@ -12,13 +12,13 @@ const Sidebar = ({isOpen, toggle})=> {
         <SidebarWrapper>
             <SidebarMenu>
                 <SidebarLink to='about' onClick={toggle}>
-                    About
+                    Education
                 </SidebarLink>
                 <SidebarLink to='Skills' onClick={toggle} >
-                    Skills
+                    Languages
                 </SidebarLink>
                 <SidebarLink to='Music' onClick={toggle}>
-                    Music
+                    Projects
                 </SidebarLink>
             </SidebarMenu>
             <SideBtnWrap>
